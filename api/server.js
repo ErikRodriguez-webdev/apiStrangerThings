@@ -1,7 +1,7 @@
 const express = require("express");
 const helmet = require("helmet");
 const cors = require("cors");
-const CharacterRouter = require("../characters/charactersRouter");
+// const CharacterRouter = require("../characters/charactersRouter");
 
 const server = express();
 
@@ -13,4 +13,6 @@ server.get("/", (req, res) => {
   res.status(200).json({ message: "API IS UP!" });
 });
 
-server.use("/api/characters", CharacterRouter);
+// server.use("/api/characters", CharacterRouter);
+
+module.exports = server;
