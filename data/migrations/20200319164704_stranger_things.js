@@ -40,7 +40,7 @@ exports.up = function(knex) {
 
 exports.down = function(knex) {
   return knex.schema
-    .dropTableIfExist("characters_episodes")
-    .dropTableIfExist("episodes")
-    .dropTableIfExist("characters");
+    .dropTableIfExists("characters_episodes")
+    .dropTableIfExists("episodes")
+    .dropTableIfExists("characters");
 };
