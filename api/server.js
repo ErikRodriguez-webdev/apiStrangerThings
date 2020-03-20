@@ -10,7 +10,7 @@ server.use(cors());
 server.use(express.json());
 
 server.get("/", (req, res) => {
-  res.status(200).json({ message: "API IS UP!" });
+  res.send(`<h1>API IS UP!</h1>`);
 });
 
 // server.use("/api/characters", CharacterRouter);
